@@ -62,7 +62,7 @@ services:
       - ./hadoop_conf/etc:/opt/hadoop/etc
 
   postgres:
-    image: postgres:10
+    image: postgres
     hostname: postgres
     environment:
       POSTGRES_DB: 'metastore_db'
@@ -79,7 +79,7 @@ services:
       target: hive_hadoop
     hostname: metastore
     # Сначала запусти меня
-    #    command: ["schematool", "--dbType", "postgres", "--initSchema"]
+#    command: ["schematool", "--dbType", "postgres", "--initSchema"]
     # А уже потом спокойно запускай меня
     command: [ "hive", "--service", "metastore" ]
     environment:
@@ -120,6 +120,7 @@ services:
     volumes:
       - ./hadoop_conf/etc:/opt/hadoop/etc
       - ./notebooks:/opt/notebooks
+      - ./homeworks:/opt/homeworks
     command: ["jupyter", "notebook", "--allow-root", "--ip", "0.0.0.0"]
 
 #  Вот этого монстра запускай на свой страх и риск
@@ -146,4 +147,3 @@ volumes:
   resourcemanager:
   nodemanager1:
   hadoop_namenode:
-
