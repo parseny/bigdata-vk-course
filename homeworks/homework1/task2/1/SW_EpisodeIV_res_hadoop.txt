@@ -1,0 +1,20 @@
+"luke"	254
+"han"	153
+"threepio"	119
+"ben"	82
+"leia"	57
+"vader"	41
+"red leader"	37
+"biggs"	34
+"tarkin"	28
+"owen"	25
+"trooper"	19
+"wedge"	14
+"gold leader"	14
+"officer"	11
+"red ten"	8
+"gold five"	7
+"jabba"	6
+"intercom voice"	6
+"greedo"	6
+"first trooper"	6
