@@ -4,6 +4,19 @@ There are two blocks in the task:
 - Local cluster deployment 
 - Writing map reduce in Python
 
+## Data Description
+[Dataset](https://www.kaggle.com/datasets/xvivancos/star-wars-movie-scripts/data) from kaggle.
+
+Dataset structure: a csv file consisting of three columns:
+- the sequence number of the phrase
+- the character
+- the text.
+
+Example:
+```
+"2" "THREEPIO" "We're doomed!"
+```
+
 ## Part 1. Local cluster deployment
 
 1. Deploy a local cluster in a configuration of: 
